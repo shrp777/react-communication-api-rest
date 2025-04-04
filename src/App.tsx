@@ -20,6 +20,7 @@ function App() {
         const todoService: TodoService = new TodoService(API);
         //on appelle la méthode du service pour récupérer les todos
         const result: Array<Todo> = await todoService.findTodos();
+        //
         setTodos(result);
         setIsError(false);
         setIsLoading(false);
